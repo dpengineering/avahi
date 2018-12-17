@@ -63,7 +63,6 @@ SUBDIRS = \
 	avahi-discover-standalone \
 	avahi-daemon \
 	avahi-sharp \
-	initscript \
 	avahi-dnsconfd \
 	avahi-utils \
 	avahi-python \

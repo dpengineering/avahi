@@ -29,3 +29,22 @@ OHLOH:
 AUTHORS:
 	Lennart Poettering
 	Trent Lloyd
+	
+	
+Install procedures?
+
+Kill avahi-daemon (-k, kill PID, systemctl stop, etc)
+
+E.g.
+sudo systemctl stop avahi-daemon.service 
+sudo systemctl stop avahi-daemon.socket
+
+
+sudo apt purge avahi-daemon
+
+git clone https://github.com/dpengineering/avahi.git
+sudo ./bootstrap.sh
+sudo ./install_deps.sh 
+sudo make install
+
+sudo apt install avahi-daemon --when prompted, use own config

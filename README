@@ -31,10 +31,20 @@ AUTHORS:
 	Trent Lloyd
 	
 	
-#Install procedures?
+Install procedures?
+
+Kill avahi-daemon (-k, kill PID, systemctl stop, etc)
+
+E.g.
 sudo systemctl stop avahi-daemon.service 
-sudo systemctl stop avahi-daemon.socket 
+sudo systemctl stop avahi-daemon.socket
+
+
+sudo apt purge avahi-daemon
+
 git clone https://github.com/dpengineering/avahi.git
-sudo ./install_deps.sh 
 sudo ./bootstrap.sh
+sudo ./install_deps.sh 
 sudo make install
+
+sudo apt install avahi-daemon --when prompted, use own config

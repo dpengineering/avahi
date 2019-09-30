@@ -29,3 +29,12 @@ OHLOH:
 AUTHORS:
 	Lennart Poettering
 	Trent Lloyd
+	
+	
+#Install procedures?
+sudo systemctl stop avahi-daemon.service 
+sudo systemctl stop avahi-daemon.socket 
+git clone https://github.com/dpengineering/avahi.git
+sudo ./install_deps.sh 
+sudo ./bootstrap.sh
+sudo make install

@@ -48,4 +48,4 @@ sudo apt install libexpat1*
 sudo ./bootstrap.sh
 sudo make install
 
-sudo apt install avahi-daemon --when prompted, use own config
+sudo apt install avahi-daemon --when prompted, use own config (Answer Y to prompt)

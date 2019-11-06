@@ -43,8 +43,9 @@ sudo systemctl stop avahi-daemon.socket
 sudo apt purge avahi-daemon
 
 git clone https://github.com/dpengineering/avahi.git
-sudo ./bootstrap.sh
 sudo ./install_deps.sh 
+sudo apt install libexpat1*
+sudo ./bootstrap.sh
 sudo make install
 
-sudo apt install avahi-daemon --when prompted, use own config
+sudo apt install avahi-daemon --when prompted, use own config (Answer Y to prompt)

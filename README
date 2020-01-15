@@ -49,3 +49,9 @@ sudo ./bootstrap.sh
 sudo make install
 
 sudo apt install avahi-daemon --when prompted, use own config (Answer Y to prompt)
+
+Paul recomends making sure that any future updates to avahi-daemon do not overide this custom implementation 
+Basically - Put the package on hold:
+
+echo "avahi-daemon hold" | sudo dpkg --set-selections
+
